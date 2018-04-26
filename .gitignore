@@ -6,3 +6,10 @@
 *.exe
 *.config
 *.force
+*.cache
+*.force
+*.cache
+*.force
+*.targets
+*.txt
+*.force
