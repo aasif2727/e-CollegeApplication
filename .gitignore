@@ -13,3 +13,5 @@
 *.targets
 *.txt
 *.force
+*.cache
+*.transform
