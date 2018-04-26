@@ -1,0 +1,8 @@
+
+*.pdb
+*.dll
+*.force
+*.xml
+*.exe
+*.config
+*.force
