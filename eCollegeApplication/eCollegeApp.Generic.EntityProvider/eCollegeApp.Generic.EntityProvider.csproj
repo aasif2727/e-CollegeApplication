@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntityConfig\AddressConfig.cs" />
+    <Compile Include="EntityConfig\EducatorConfig.cs" />
     <Compile Include="EntityConfig\StudentConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
