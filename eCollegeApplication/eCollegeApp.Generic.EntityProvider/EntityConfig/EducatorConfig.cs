@@ -18,6 +18,7 @@ namespace eCollegeApp.Generic.EntityProvider.EntityConfig
             Property(t => t.LastName).HasMaxLength(100).IsRequired();
             Property(t => t.Gender).HasMaxLength(10).IsRequired();
             Property(t => t.DOB).IsRequired();
+            ToTable("Educator");
         }
     }
 }
