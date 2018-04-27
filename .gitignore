@@ -15,3 +15,7 @@
 *.force
 *.cache
 *.transform
+*.suo
+*.user
+bin
+obj
