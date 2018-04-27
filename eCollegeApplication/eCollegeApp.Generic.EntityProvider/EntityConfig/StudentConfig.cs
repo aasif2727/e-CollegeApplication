@@ -13,7 +13,8 @@ namespace eCollegeApp.Generic.EntityProvider.EntityConfig
     {
         public StudentConfig()
         {
-            HasKey(t => t.StudentId);//.HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            HasKey(t => t.StudentId);
+            Property(t => t.StudentId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(t => t.FirstName).HasMaxLength(100).HasColumnName("fname").IsRequired();
             Property(t => t.MiddleName).HasMaxLength(50).HasColumnName("mname").IsOptional();
             Property(t => t.LastName).HasMaxLength(100).HasColumnName("lname").IsRequired();

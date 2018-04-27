@@ -19,7 +19,9 @@ namespace eCollegeApp.Generic.Models.Models
         public string Gender { get; set; }
         public DateTime DOB { get; set; }
         public Guid EducatorKey { get; set; }
-
         public Address Address { get; set; }
+
+        //navigation
+        public virtual Profile Profile { get; set; }
     }
 }

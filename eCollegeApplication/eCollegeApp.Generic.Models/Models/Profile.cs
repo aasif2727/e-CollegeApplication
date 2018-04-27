@@ -9,7 +9,7 @@ namespace eCollegeApp.Generic.Models.Models
     public class Profile:TimeStampBase
     {
         public int ProfileId { get; set; }
-        public int MemberId { get; set; }
+        public int? MemberId { get; set; }
         public byte[] ProfileImage { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace eCollegeApp.Generic.EntityProvider.EntityConfig
         public EducatorConfig()
         {
             HasKey(t => t.EducatorId);
+            Property(t => t.EducatorId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(t => t.FirstName).HasMaxLength(100).IsRequired();
             Property(t => t.MiddleName).HasMaxLength(50).IsOptional();
             Property(t => t.LastName).HasMaxLength(100).IsRequired();

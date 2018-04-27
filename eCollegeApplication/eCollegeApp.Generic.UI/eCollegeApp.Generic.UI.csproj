@@ -248,9 +248,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\eCollegeApp.Generic.EntityProvider\eCollegeApp.Generic.EntityProvider.csproj">
-      <Project>{9d0f990f-528d-4ec3-8861-ae805eadb6a1}</Project>
-      <Name>eCollegeApp.Generic.EntityProvider</Name>
+    <ProjectReference Include="..\eCollegeApp.Generic.DataCore\eCollegeApp.Generic.DataCore.csproj">
+      <Project>{a2e38ebf-bd7e-4e15-b2a0-8ab707c9c4ea}</Project>
+      <Name>eCollegeApp.Generic.DataCore</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
