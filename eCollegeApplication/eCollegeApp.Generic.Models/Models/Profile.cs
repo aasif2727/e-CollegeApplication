@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace eCollegeApp.Generic.Models.Models
 {
-    public abstract class ProfileBase :TimeStampBase
+    public class Profile:TimeStampBase
     {
-        public string Email { get; set; }
-        public string Phone { get; set; }
+        public int ProfileId { get; set; }
+        public int MemberId { get; set; }
+        public byte[] ProfileImage { get; set; }
     }
 }

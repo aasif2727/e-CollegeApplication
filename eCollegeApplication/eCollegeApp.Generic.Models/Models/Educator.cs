@@ -6,22 +6,19 @@ using System.Threading.Tasks;
 
 namespace eCollegeApp.Generic.Models.Models
 {
-    public class Student:ContactMode
+    public class Educator:ContactMode
     {
-        public Student()
+        public Educator()
         {
             this.Address = new Address();
         }
-        public int StudentId { get; set; }
+        public int EducatorId { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
-        public string FathersName { get; set; }
-        public string MothersName { get; set; }
-        public string GuardianName { get; set; }
         public string Gender { get; set; }
         public DateTime DOB { get; set; }
-        public Guid StudentKey { get; set; }
+        public Guid EducatorKey { get; set; }
 
         public Address Address { get; set; }
     }
