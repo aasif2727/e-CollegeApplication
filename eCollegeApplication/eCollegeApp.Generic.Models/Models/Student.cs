@@ -21,10 +21,10 @@ namespace eCollegeApp.Generic.Models.Models
         public string GuardianName { get; set; }
         public string Gender { get; set; }
         public DateTime DOB { get; set; }
-        public Guid StudentKey { get; set; }
+        public string RegdNumber { get; set; }
         public Address Address { get; set; }
 
         //navigation
-        public virtual Profile Profile { get; set; }
+        public virtual Profile StudentProfile { get; set; }
     }
 }

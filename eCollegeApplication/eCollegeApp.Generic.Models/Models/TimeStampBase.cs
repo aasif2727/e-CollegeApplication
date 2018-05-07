@@ -8,6 +8,7 @@ namespace eCollegeApp.Generic.Models.Models
 {
     public abstract class TimeStampBase
     {
+        public bool IsActive { get; set; }
         public DateTime? CreatedDate { get; set; }
         public DateTime? ModifiedDate { get; set; }
     }

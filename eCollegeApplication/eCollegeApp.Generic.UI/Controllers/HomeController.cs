@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eCollegeApp.Generic.DataCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,12 @@ namespace eCollegeApp.Generic.UI.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IUnitOfWork _unitOfWork;
+        public HomeController(IUnitOfWork unitOfWork)
+        {
+            this._unitOfWork = unitOfWork;
+        }
+
         public ActionResult Index()
         {
             return View("Index");

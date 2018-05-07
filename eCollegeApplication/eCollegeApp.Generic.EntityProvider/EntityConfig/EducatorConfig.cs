@@ -21,6 +21,7 @@ namespace eCollegeApp.Generic.EntityProvider.EntityConfig
             Property(t => t.Gender).HasMaxLength(10).IsRequired();
             Property(t => t.DOB).IsRequired();
             ToTable("Educator");
+            HasOptional(t => t.EducatorProfile).WithRequired(t => t.Educator); //1->0..1 relationship
         }
     }
 }

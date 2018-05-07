@@ -13,9 +13,6 @@ namespace eCollegeApp.Generic.EntityProvider.EntityConfig
     {
         public ProfileConfig()
         {
-            HasKey(t => t.ProfileId);
-            Property(t => t.ProfileId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(t => t.MemberId).IsOptional();
             Property(t => t.ProfileImage).IsOptional();
             ToTable("Profile");
         }

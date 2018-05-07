@@ -40,12 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IEducatorRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\IStudentRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\eCollegeApp.Generic.EntityProvider\eCollegeApp.Generic.EntityProvider.csproj">
-      <Project>{9d0f990f-528d-4ec3-8861-ae805eadb6a1}</Project>
-      <Name>eCollegeApp.Generic.EntityProvider</Name>
+    <ProjectReference Include="..\eCollegeApp.Generic.Models\eCollegeApp.Generic.Models.csproj">
+      <Project>{820513C6-79F6-4E9A-9043-BDDD46BF0B09}</Project>
+      <Name>eCollegeApp.Generic.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
